@@ -55,11 +55,13 @@ export class TimelineTemplateDemo {
     console.log(toggleChange.source.value);
     if (toggleChange.source.value == "rufus") {
       this.sortEventsByRufusOrder();
+
       document.body.style.background = "white";
       document.getElementById("title").style.color = "black";
     } else if (toggleChange.source.value == "dana") {
       this.sortEventsByDanaOrder();
-      document.body.style.background = "rgb(33, 33, 33)";
+
+      document.body.style.background = "rgb(25, 25, 25)";
       document.getElementById("title").style.color = "white";
     } else {
       // uh oh, BUG!
