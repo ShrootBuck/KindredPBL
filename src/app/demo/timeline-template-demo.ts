@@ -152,12 +152,14 @@ export class TimelineTemplateDemo {
       document.body.style.background = "white";
       document.getElementById("title").style.color = "black";
       document.getElementById("perspective").style.color = "black";
+      document.getElementById("authors").style.color = "black";
     } else if (toggleChange.source.value == "dana") {
       this.events = this.danaEvents;
 
       document.body.style.background = "rgb(25, 25, 25)";
       document.getElementById("title").style.color = "white";
       document.getElementById("perspective").style.color = "white";
+      document.getElementById("authors").style.color = "white";
     } else {
       // uh oh, BUG!
     }
